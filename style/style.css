@@ -1,0 +1,687 @@
+/* global style */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    
+}
+.container{
+    width:1200px;
+    margin: auto;
+}
+/* framwork */
+.clearfix {
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+} 
+ul{
+    list-style: none;
+}
+.mix{
+    display: none;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.headring-line {
+    position: relative;
+}
+.headring-line:after {
+    content: "";
+    position: relative;
+    top: 5px;
+    right: 0;
+    border: 1.5px solid #04cc94;
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*loading*/
+#loadingscreen{
+    background-color: #222;
+    opacity: 1;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#loading{
+    color: #fff;
+    width: 120px;
+    height: 25px;
+    margin: 300px auto;
+    font-size: 30px;
+}
+/*loading*/
+.header,.testimonials,.portofolio,.team,.service,.sponsours,.about,.contact,.footer,.navbar{
+    min-width: 1200px;
+}
+/* start nav bar */
+.navbar {
+    background: none;
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+        width: 100%;
+}
+
+.navbar .links {
+    float:left;
+    width: 82%;
+    padding-left: 18%;
+    padding-top: 8px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.navbar .links ul {
+    text-decoration: none;
+}
+.navbar .links ul li {
+    display: inline-block;
+    padding: 10px 10px;
+    color: #000;
+}
+.navbar .links ul li a {
+    text-decoration: none;
+    transition: all 0.5s ease-in-out ;
+}
+.navbar .links ul li  .active {
+    color: #04cc94;
+}
+.navbar .links ul li a:hover {
+    color: #04cc94;
+}
+/* line */
+.navbar .links ul li .active:after {
+    content: "";
+    position: relative;
+    top: 5px;
+    right: 0;
+    border: 1px solid #04cc94;
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.navbar .links ul li :hover:after {
+    content: "";
+    position: relative;
+    top: 5px;
+    right: 0;
+    border: 1px solid #04cc94;
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*end line */
+.navbar .brand {
+    float:left;
+    width:17%;
+    margin-top: -13px;
+    text-transform: uppercase;
+        font-size: 26px;
+    font-stretch: expanded;
+    font-family: cursive;
+}
+.navbar .brand img, h5 {
+    display: inline-block;
+}
+.navbar .brand h5{
+    margin-left: -57px;
+    margin-top: 52px;
+
+}
+.navbar .brand img {
+        width: 115px;
+    padding-top: 0;
+    float: left;
+    height: 134px;
+}
+/* end nav bar */ 
+/* start header */
+.header {
+    background: url(../img/header.jpg);
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    height: 600px
+}
+/* slider */
+.header .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100%; !importnat
+    text-align: center;
+    /*top:-102px;*/
+}
+.header .bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100%;
+    padding-top: 260px;
+}
+.bxslider {
+    width: 100%;
+    height: 100%;
+    cursor: all-scroll;
+}
+.bxslider ul li {
+    display: block;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 2;
+}
+.header .bxslider h3 {
+    text-transform: uppercase;
+    font-size: 41px;
+    font-weight: 300;
+}
+.header .bxslider p {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: extra-expanded;
+}
+.header .bxslider h3 span {
+    color: #04cc94;
+}
+.header .bxslider p span {
+    font-weight: 700;
+    font-size: 22px;
+}
+/* end header */ 
+/* start About section */
+.about{
+    padding-top: 60px;
+}
+.about .rth-sec-about {
+    float: right;
+    color: #666;
+    width: 60%;
+    padding-left: 160px;
+}
+.about .rth-sec-about h4 {
+    font-weight: 300;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.about .rth-sec-about h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: -29px;
+} /* line */
+.about .rth-sec-about h2:after {
+     content: "";
+    position: relative;
+    border: 1.5px solid #04cc94;
+    display: block;
+    width: 93px;
+    top: 6px;
+    left: 0;
+}
+.about .rth-sec-about h2 span {
+    color: #444;
+    font-weight: 700;
+}
+.about .rth-sec-about  p {
+        width: 510px;
+        padding-top: 15px;
+    padding-bottom: 15px;
+}
+.about .rth-sec-about ul {
+        list-style: square;
+    padding: 0;
+    padding-left: 18px;
+}
+.about .rth-sec-about ul li {
+        padding-bottom: 10px;
+}
+.about .rth-sec-about ul li span {
+    font-weight: 700;
+    color:#333;
+        padding-right: 10px;
+    text-transform: capitalize;
+}
+.about .lft-sec-about{
+    float: left;
+    width: 40%;
+}
+.about .lft-sec-about img {
+    width: 550px;
+    padding-left: 15px;
+    padding-bottom: 70px;
+    border: 4px solid transparent;
+}
+/* End About section */
+/* Start Team section */
+.team{
+    text-align: center;
+    text-transform: capitalize;
+    background: url(../img/team-bk.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+.team .team-prof{
+    width: 100%;
+    padding-bottom: 90px;
+}
+.team h2 {
+    padding: 70px 0 50px 0;
+    font-weight:300;
+    font-size: 29px;
+}
+.team h2 span {
+    font-weight:700;
+}
+.team .team-prof .box {
+    display: inline-block;
+    width: 24%;
+}
+.team .team-prof .box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.team .team-prof .box h4{
+    font-size:18px;
+}
+.team .team-prof .box h5 {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.team .team-prof .box p {
+    font-size: 13px;
+    width: 268px;
+    line-height: 1.3;
+}
+.team .team-prof .box:hover img {
+    border: 4px solid #04cc94;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function:ease;
+}
+/* END Team section */
+/* start Service */
+.service {
+    text-align: center;
+    color: #555;
+}
+.service h2 {
+    padding: 70px 0 50px 0;
+    font-weight:100;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.service h2 span {
+    font-weight:700;
+}
+.service p {
+    font-size: 11px;
+    font-weight: 300;
+}
+.service .service-box {
+    padding-top: 55px;
+    margin-bottom: 60px;
+}
+.service .service-box .box {
+    display: inline-block;
+    width: 24%;
+}
+/* this is copied */
+.service .service-box .box i {
+       font-size: 40px;
+    border: 4px solid #04cc94;
+    width: 100px;
+    height: 100px;
+    padding: 27px 25px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out ;
+}
+/* end this */
+.service .service-box .box:hover i {
+   background-color:#04cc94;
+    color: #fff;
+}
+.service .service-box .box h3 {
+    text-transform: uppercase;
+    font-size: 18px
+}
+.service .service-box .box p {
+    width: 214px;
+    margin: auto;
+}
+/* End service */ 
+/* start sponsours */
+.sponsours {
+    text-align: center;
+    background: url(../img/sponsours.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+.sponsours h2 {
+    padding: 70px 0 50px 0;
+    font-weight:700;
+    font-size: 26px;
+    text-transform: uppercase;
+    color:#fff;
+}
+.sponsours .slider {
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+.sponsours i {
+       font-size: 80px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 70px;
+    color: #fff;
+}
+/* start sponsours */
+/*start portofolio */
+.portofolio {
+    text-align: center;
+}
+.portofolio h2 {
+    padding: 70px 0 50px 0;
+    font-weight:100;
+    font-size: 27px;
+    text-transform: uppercase;
+    color:#777;
+}
+.portofolio h2 span {
+    font-weight: 700;
+    color:#999;
+}
+.portofolio p {
+    font-size: 11px;
+    font-weight: 300;
+    width: 100%;
+}
+.portofolio .filter-header {
+    color: #666;
+    width: 100%;
+    margin-top:105px;
+}
+.portofolio .filter-header h4 {
+    float: left;
+    text-transform: uppercase;
+    width: 15%;
+}
+.portofolio .filter-header ul{
+    float: right;
+    width: 44%;
+}
+.portofolio .filter-header ul li {
+    display: inline-block;
+    padding-left: 23px;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 15px;
+    color: #444;
+}
+.portofolio .filter-header ul .active{
+    color: #111;
+    font-weight: 700;
+}
+.portofolio .filter-header ul li:hover {
+    color: #222;
+    cursor: pointer;
+}
+.portofolio .filter-header ul li:after {
+    content: "";
+    position: relative;
+    border:0.5px solid #666;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 17px;
+}
+/* temporary fix */
+.portofolio .filter-header ul li:last-child:after {
+    content: "";
+    position: relative;
+    border: 0 solid transparent;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/* temporary fix */
+.portofolio .gallery {
+    margin-top: 20px;
+}
+.portofolio .gallery .row {
+    margin-top: 15px;
+}
+.portofolio .gallery:last-child{
+    margin-bottom: 90px;
+}
+.portofolio .gallery .row > div {
+    width: 22%;
+    height: 255px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.portofolio .gallery .row > div .overlay{
+    background: rgba(4, 204, 143, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 2;
+    display: none;
+    transition: all 0.5s linear;
+}
+.portofolio .gallery .row > div .overlay .info-img {
+    padding-top: 20%;
+    display: none;
+}
+.portofolio .gallery .row > div .overlay .info-img h5 {
+    font-size: 16px;
+    border: 2px solid #fff;
+    padding: 13px 30px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: normal;
+    cursor: pointer;
+}
+.portofolio .gallery .row > div .overlay .info-img h5:hover {
+    font-weight: 700;
+}
+.portofolio .gallery .row > div .overlay .info-img i {
+    display: block;
+    font-size: 36px;
+    cursor: pointer;
+}
+.portofolio .gallery .row > div:nth-child(2){
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.portofolio .gallery .row > div:nth-child(3){
+    margin-right: 3%;
+}
+.portofolio .gallery .row > div img {
+    width: 100%;
+    height: 100%;
+}
+.portofolio .gallery .row > div:hover .overlay,
+.portofolio .gallery .row > div:hover .info-img {
+    display: block;
+        transition: all 0.5s linear;
+}
+/*EnD portofolio */
+/* Starrt Testimonials */
+.testimonials {
+    text-align: center;
+    background: url(../img/05.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.testimonials h2 {
+    padding: 70px 0 50px 0;
+    font-weight:700;
+    font-size: 27px;
+    text-transform: uppercase;
+    color:#fff;
+    position: relative;
+    z-index: 3;
+}
+.testimonials h2 span {
+    font-weight: 100;
+    color:#fff;
+    position: relative;
+    font-size: 25px;
+    z-index: 3;
+}
+.testimonials .slider {
+    position: relative;
+    z-index: 3;
+}
+.testimonials .slider > div {
+    display: none;
+}
+.testimonials .slider .selected {
+    display: block;
+}
+.testimonials .client-ts {
+    text-transform: capitalize;
+    padding-bottom: 70px;
+}
+.testimonials .client-ts q {
+    display: block;
+    width:760px;
+    font-weight: 600;
+    margin: auto;
+    padding-bottom: 19px;
+}
+.testimonials .client-ts p {
+    font-size: 14px;
+}
+/* EnD Testimonials */
+/* start contact us */
+.contact{
+    text-align: center;
+}
+.contact h2 {
+    padding: 70px 0 50px 0;
+    font-weight:100;
+    font-size: 27px;
+    text-transform: uppercase;
+    color:#777;
+    padding-top: 100px;
+}
+.contact h2 span {
+    font-weight: 700;
+    color:#999;
+}
+.contact p {
+    font-size: 11px;
+    font-weight: 300;
+    width: 780px;
+    margin: auto;
+    line-height: 1.5;
+    color: #333;
+}
+.contact form {
+    padding-top: 32px;
+    padding-bottom: 80px;
+    width:780px;
+    margin: auto;
+}
+.contact form input {
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 8px;
+    color: #333;
+    font-size: 15px;
+}
+.contact form input:first-child {
+    margin-right: 3%;
+}
+.contact form textarea {
+    width: 100%;
+    height: 74px;
+    margin-bottom: 15px;
+}
+.contact form input[type="submit"] {
+    float: right;
+    background-color: #04cc94;
+    color: #fff;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 13px;
+    width: auto;
+    box-shadow: none;
+    border: none;
+}
+.contact form input[type="submit"]:hover {
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+}
+/* EnD contact us */
+/* start footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+.footer div {
+    margin: auto;
+    width: 100%;
+    padding: 1px;
+}
+.footer div a {
+    color: #04cc94;
+    text-decoration: none;
+}
+/* End footer */
